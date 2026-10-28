@@ -1,68 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Club Page</title>
-
-    <style>
-
-:root {
-    --main-color: navy;
-    --card-background: lightgray;
-    --main-font: Arial, sans-serif;
-    --spacing: 20px;
-
-
-}
-    * {
-        box-sizing: border-box;
-    }
-
-    h1 {
-        color: var(--main-color);
-    }
-
-    .card {
-        background-color: var(--card-background);
-    padding: var(--spacing);
-    }
-
-    #hero {
-        text-align: center;
-    }
-
-body {
-
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333333;
-}    
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam's Portfolio - Week 5</title>
+    
+    <!-- Task 5.3: Google Font (Poppins) Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Task 5.1: External CSS file linked in head -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="hero">
-    <h1>Welcome to Our Club</h1>
-    <p>This is our club page.</p>
-</div>
+    <!-- Task 5.2: #hero (id selector) -->
+    <header id="hero">
+        <!-- Task 5.2: h1 (element selector) -->
+        <h1>Hi, I am Aadesh kumar</h1>
+        <p>B.Tech Computer Science Student | Web Developer</p>
+    </header>
 
-<div class="card">
-    <h2>About Our Club</h2>
-    <p>Welcome to our club website.</p>
-</div>   
+    <main>
+        <!-- Task 5.2: .card (class selector) -->
+        <section class="card">
+            <h2>About Me</h2>
+            <p>I am a CSE student and currently learning HTML, CSS, and JavaScript to improve my portfolio.</p>
+        </section>
 
-<div class="card">
-    <h2>Why I Chose These Colours</h2>
-    <p>Blue gives the page a professional and trustworthy look.</p>
-    <p>Light grey makes the page look clean and simple.</p>
-    <p>Dark grey text is easy to read on a light background.</p>  
-</div>
+        <!-- Task 5.2: .card (class selector) -->
+        <section class="card">
+            <h2>My Skills & Courses</h2>
+            <ul>
+                <li>Java Programming & DSA</li>
+                <li>HTML5 & CSS3 Styling</li>
+                <li>Git & GitHub Basics</li>
+            </ul>
+        </section>
+
+        <!-- Task 5.5: 3 lines on why you chose these colours -->
+        <article class="card">
+            <h2>Color Choice Reflection</h2>
+            <p>1. I chose a modern dark slate blue colour to give the page a professional and tech-focused look.</p>
+<p>2. I used a light background colour to make the content easy to read and reduce eye strain.</p>
+<p>3. I used orange accents to highlight important headings and make different sections stand out.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aadesh kumar. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-
