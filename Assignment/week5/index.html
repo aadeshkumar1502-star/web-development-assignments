@@ -4,32 +4,38 @@
     <title>Club Page</title>
 
     <style>
-    /* Universal selector */
+
+:root {
+    --main-color: navy;
+    --card-background: lightgray;
+    --main-font: Arial, sans-serif;
+    --spacing: 20px;
+}
+
     * {
         box-sizing: border-box;
     }
 
-    /* Element selector */
     h1 {
-        color: navy;
+        color: var(--main-color);
     }
 
-    /* Class selector */
     .card {
-        background-color: lightgray;
-        padding: 20px;
+        background-color: var(--card-background);
+    padding: var(--spacing);
     }
 
-    /* ID selector */
     #hero {
         text-align: center;
     }
 
 body {
-    font-family: Arial, sans-serif;
+
+    font-family: var(--main-font);
     font-size: 16px;
     line-height: 1.6;
     color: #333333;
+}
 }
 
 p {
