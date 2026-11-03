@@ -25,3 +25,16 @@ body {
     gap: 15px;
     padding: 15px;
 }
+/* =====================================
+   Task 8.2: Responsive Grid
+   repeat(auto-fit, minmax(150px, 1fr))
+   ===================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 20px;
+}
