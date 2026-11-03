@@ -139,3 +139,50 @@ body {
 
     gap: 20px;
 }
+/* =====================================
+   Task 8.4: Flexbox Inside Each Card
+   Icon and text side by side
+   ===================================== */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.description {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease;
+}
