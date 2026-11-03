@@ -186,3 +186,56 @@ body {
     transform: translateY(-4px);
     transition: transform 0.2s ease;
 }
+/* =====================================
+   Task 8.5: Test Grid in DevTools
+   Inspect .dashboard and .cards
+   ===================================== */
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto auto 1fr auto;
+
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+
+    .header {
+        gap: 12px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .profile span:first-child {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
