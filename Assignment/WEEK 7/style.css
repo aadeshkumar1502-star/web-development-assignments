@@ -172,4 +172,60 @@ footer {
     background-color: #0f172a;
     color: white;
 }
+/* Task 7.5: Responsive layout for tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .banner {
+        min-height: 350px;
+    }
+
+    .services {
+        padding: 45px 5%;
+    }
+}
+
+/* Task 7.5: Responsive layout for mobile phones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .nav-links .nav-button {
+        padding: 8px 12px;
+    }
+
+    .banner {
+        min-height: 320px;
+        padding: 45px 18px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .services h2,
+    .about h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        flex-basis: 200px;
+        max-width: none;
+    }
+}
 
