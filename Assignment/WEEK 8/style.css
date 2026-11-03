@@ -1,0 +1,27 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* =====================================
+   Task 8.1: CSS Grid, Columns, fr and Gap
+   ===================================== */
+
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 70px 1fr 60px;
+
+    gap: 15px;
+    padding: 15px;
+}
