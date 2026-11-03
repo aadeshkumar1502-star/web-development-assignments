@@ -153,4 +153,23 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+/* Task 7.4: Complete landing page */
+.about {
+    padding: 55px 8%;
+    text-align: center;
+    background-color: #eaf1ff;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #475569;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+}
 
